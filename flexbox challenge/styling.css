@@ -1,0 +1,318 @@
+/* general css */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em 1em;
+    max-width: 1200px;
+}
+
+.btn {
+    background-color: #A59678;
+    color: white;
+    border-radius: 25px;
+    padding: 0.5em 1.25em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+}
+
+.gold {
+    color: #A59678;
+}
+
+.anchor {
+    text-decoration: none;
+    color: white;
+}
+
+.anchor:hover{
+    text-decoration: underline;
+}
+
+.img {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.d-flex2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.d-flex3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* header */
+.header {
+    background-color: #2E323F;
+}
+
+.nav__list {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.125rem;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.nav__btn {
+    background-color: #A59678;
+    color: white;
+    border-radius: 25px;
+    padding: 0.5em 1.25em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* hero */
+.hero {
+    background-color: #3B4050;
+    color: white;
+}
+
+/* section.intro */
+.intro {
+    background-color: gainsboro;
+    text-align: center;
+}
+
+/* section.body */
+
+.column {
+    background-color: #3B4050;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    padding: 1em 1.5em 1.5em 1.5em;
+}
+
+/* section.footer */
+.footer {
+    background-color: #3B4050;
+    color: white;
+}
+
+.footer__links {
+    margin-top: -1em;
+    line-height: 2.5em;
+}
+
+
+
+                            /* mobile-specific css */
+/* -------------------------------------------------------------------------- */
+.header {
+    text-align: center;
+}
+
+.nav__link {
+    line-height: 2em;
+    margin-right: 2.5em;
+}
+
+.btn-wrapper {
+    text-align: center;
+    padding: 2.5em;
+}
+
+.footer {
+    text-align: center;
+}
+/* fonts */
+.title {
+    font-size: 3rem;
+}
+
+.hero__text {
+    font-size: 1.125rem;
+}
+
+.sub-heading {
+    font-size: 1.5rem;
+}
+
+.p {
+    font-size: 1rem;
+}
+
+.heading {
+    font-size: 2rem;
+}
+
+.body__p {
+    font-size: 1.2rem;
+}
+
+.column__heading {
+    font-size: 1.5rem;
+}
+
+.footer__heading {
+    font-size: 1.75rem;
+}
+
+.link__heading {
+    font-size: 21px;
+}
+
+
+/* media queries */
+@media (min-width: 700px) {
+    .nav__list {
+        margin-top: 0;
+    }
+
+    .nav__btn {
+        margin-right: 0;
+    }
+
+    .nav__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .d-flex {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3em;
+    }
+    .d-flex2 {
+        flex-direction: row;
+    }
+
+    .btn-wrapper {
+        text-align: left;
+        padding: 0.5em 0 0 0;
+    }
+
+    .footer {
+        text-align: left;
+    }
+
+    .footer__heading {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 4.5rem;
+    }
+
+    .hero__text {
+        font-size: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding-bottom: 4em;
+    }
+
+    .sub-heading {
+        font-size: 1.65rem;
+    }
+
+    .p {
+        font-size: 1.125rem;
+    }
+
+    .heading {
+        font-size: 2.25rem;
+    }
+
+    .body__p {
+        font-size: 1.3125rem;
+    }
+
+    .column__heading {
+        font-size: 1.75rem;
+    }
+
+    .footer__heading {
+        font-size: 2rem;
+    }
+
+    .link__heading {
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .d-flex2 {
+        flex-direction: column;
+    }
+
+    .d-flex3 {
+        flex-direction: row;
+        gap: 6em;
+    }
+
+    .title {
+        font-size: 5.626rem;
+    }
+
+    .hero__text {
+        font-size: 1.5rem;
+    }
+
+    .sub-heading {
+        font-size: 1.875rem;
+    }
+
+    .p {
+        font-size: 1.125rem;
+    }
+
+    .heading {
+        font-size: 2.25rem;
+    }
+    
+    .body__p {
+        font-size: 1.3125rem;
+    }
+
+    .column__heading {
+        font-size: 1.75rem;
+    }
+
+    .footer__heading {
+        font-size: 2.25rem;
+    }
+
+    .link__heading {
+        font-size: 21px;
+    }
+}
